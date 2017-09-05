@@ -1,20 +1,20 @@
 import React, {Component} from 'react';
 
-// const getMartaData = (cb) =>{
-//     fetch('http://developer.itsmarta.com/RealtimeTrain/RestServiceNextTrain/GetRealtimeArrivals?apikey=2c514350-0c26-47dd-b872-7936af81c8e1', {
-//         method: 'get'
-//     }).then(function(response) {
-//         return response.json()
-//     }).then(function(jsonData) {
-//         // console.log(jsonData);
+const getMartaData = (cb) =>{
+    fetch('http://developer.itsmarta.com/RealtimeTrain/RestServiceNextTrain/GetRealtimeArrivals?apikey=2c514350-0c26-47dd-b872-7936af81c8e1', {
+        method: 'get'
+    }).then(function(response) {
+        return response.json()
+    }).then(function(jsonData) {
+        // console.log(jsonData);
         
-//         cb(jsonData);
+        cb(jsonData);
         
         
-//     }).catch(function(err) {
-//         // Error :(
-//     });
-// }
+    }).catch(function(err) {
+        // Error :(
+    });
+}
 
 class ProductCategoryRow extends React.Component {
     render() {

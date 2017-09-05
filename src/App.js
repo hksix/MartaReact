@@ -4,7 +4,7 @@ import './App.css';
 
 // import MartaDashboard from './MartaDashboard.js';
 import FilterableProductTable from './MartaDashboard.js';
-var data=[{}]
+// var data=[{}]
 var PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
   {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
@@ -22,7 +22,7 @@ const getMartaData = (cb) =>{
       // console.log(jsonData);
       
       cb(jsonData);
-      data.push(jsonData)
+      // data.push(jsonData)
       // console.log(jsonData)
       
       
@@ -30,11 +30,11 @@ const getMartaData = (cb) =>{
       // Error :(
   });
 }
-{getMartaData((jsonData)=>{
-  jsonData.forEach(function(element) {
-  })
-})}
-console.log(data)
+// {getMartaData((jsonData)=>{
+//   jsonData.forEach(function(element) {
+//   })
+// })}
+// console.log(data)
 
 class App extends Component {
   render() {
@@ -47,8 +47,6 @@ class App extends Component {
         {/* <MartaDashboard /> */}
         
     <FilterableProductTable products={PRODUCTS} />
-
-  );
       </div>
     );
   }
